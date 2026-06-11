@@ -11,8 +11,8 @@ def emotion_detector(text_to_analyze):
     )
     
     formatted_response = response.json()
-
     emotions = formatted_response['emotionPredictions'][0]['emotion']
+    print("emotions:--",emotions)
     anger_score = emotions['anger']
     disgust_score = emotions['disgust']
     fear_score = emotions['fear']
